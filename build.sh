@@ -60,7 +60,8 @@ function main() {
   echo "------------------------------------------------------"
   npm install express
   echo "RUNNING APPLICATION"
-  node app.js
+  nohup node app.js &
+  sleep 5
   echo "TEST"
   curl http://127.0.0.1:5002
 }
