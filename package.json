@@ -1,9 +1,0 @@
-{
-  "private": false,
-  "scripts": {
-    "install": "npm install",
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-  },
-}
