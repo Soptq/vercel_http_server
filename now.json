@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "JEKYLL_ENV": "development",
+      "NODEJS_PORT": "5002"
+    }
+  },
+  "builds": [
+    {
+      "src": "build.sh",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "_site"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
+    }
+  ]
+}
