@@ -59,7 +59,9 @@ function main() {
   echo "BUILDING..."
   echo "------------------------------------------------------"
   npm install express
+  echo "RUNNING APPLICATION"
   node app.js
+  echo "TEST"
   curl http://127.0.0.1:5002
 }
 
